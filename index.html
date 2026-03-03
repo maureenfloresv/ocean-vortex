@@ -11,15 +11,20 @@
       background: linear-gradient(to bottom, #e6f4ff, #ffffff);
     }
 
-    img {
-      border-radius: 14px;
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-      width: 100%;
+    .hero {
+      padding: 4rem 0;
+      align-items: center;
     }
 
-    section {
+    .section-block {
       padding: 4rem 0;
+      align-items: center;
+    }
+
+    img {
+      border-radius: 14px;
+      width: 100%;
+      height: auto;
     }
 
     hgroup h2 {
@@ -27,8 +32,8 @@
     }
 
     h3 {
-      margin-top: 2rem;
       color: #004080;
+      margin-top: 1rem;
     }
 
     footer {
@@ -52,81 +57,88 @@
 </nav>
 
 <main class="container">
-  <div class="grid">
-    <section>
 
-      <!-- PHOTO 1: SWIMMER (opens website) -->
-      <figure>
-        <img src="images/swimmer.png" alt="Open water swimmer" />
-      </figure>
-
+  <!-- HERO SECTION -->
+  <section class="grid hero">
+    <div>
+      <img src="images/swimmer.png?v=2" alt="Open water swimmer">
+    </div>
+    <div>
       <hgroup>
         <h2>Climate Strategy for Ocean Sport</h2>
         <h3>Transforming Climate Risk into Competitive Advantage</h3>
       </hgroup>
-
       <p>
-        As climate volatility reshapes the future of sport, sustainability alone is no longer sufficient. Ocean sports operate on the frontlines of environmental disruption — from rising sea levels and extreme weather to ecosystem degradation.
+        As climate volatility reshapes the future of sport, sustainability alone is no longer sufficient.
       </p>
-
       <p>
-        At Ocean Vortex, we position climate strategy not as compliance, but as a catalyst for innovation, resilience, and long-term enterprise value creation.
+        At Ocean Vortex, we position climate strategy not as compliance, but as a catalyst for innovation and resilience.
       </p>
+    </div>
+  </section>
 
+  <!-- INNOVATION -->
+  <section class="grid section-block">
+    <div>
       <h3>Innovation Ecosystem Development</h3>
       <p>
-        We convene leaders across sport, science, technology, finance, and policy to design and activate climate-smart innovation ecosystems. By aligning capital, data, and emerging technologies, we accelerate scalable solutions that strengthen resilience and unlock new value creation pathways.
+        We convene leaders across sport, science, technology, finance, and policy to design and activate climate-smart innovation ecosystems.
       </p>
+    </div>
+    <div>
+      <img src="images/surfer.png?v=2" alt="Surfer riding wave">
+    </div>
+  </section>
 
+  <!-- RISK ASSESSMENT -->
+  <section class="grid section-block">
+    <div>
+      <img src="images/surfer.png?v=2" alt="Climate risk in ocean sports">
+    </div>
+    <div>
       <h3>Climate Risk Assessments for Events</h3>
       <p>
-        We assess exposure to climate uncertainty, extreme weather volatility, and operational disruption across the full event lifecycle. Our analysis translates complex risk signals into actionable strategic solutions — safeguarding events, audiences, athletes, sponsors, and host communities.
+        We assess exposure to climate uncertainty, extreme weather volatility, and operational disruption across the full event lifecycle.
       </p>
+    </div>
+  </section>
 
-      <!-- PHOTO 2: SURFER -->
-      <figure>
-        <img src="images/surfer.png" alt="Surfer riding wave" />
-      </figure>
-
+  <!-- EXECUTIVE COURSE -->
+  <section class="grid section-block">
+    <div>
       <h3>Executive Climate & Innovation Strategy Course</h3>
       <p>
-        We deliver executive workshops and strategy-based course sessions that integrate climate intelligence and innovation strategy into leadership decision-making, governance structures, and enterprise strategy.
+        We deliver executive workshops and strategy-based course sessions that integrate climate intelligence into leadership decision-making.
       </p>
+    </div>
+    <div>
+      <img src="images/course.png?v=2" alt="Executive climate strategy course">
+    </div>
+  </section>
 
-      <!-- PHOTO 3: COURSE -->
-      <figure>
-        <img src="images/course.png" alt="Executive climate strategy course" />
-      </figure>
-
-    </section>
-  </div>
 </main>
 
-<section aria-label="Contact section">
-  <div class="container">
-    <article>
-
-      <!-- PHOTO 4: BEACH -->
-      <figure>
-        <img src="images/beach.png" alt="Beach coastline" />
-      </figure>
-
+<!-- CONTACT SECTION -->
+<section class="section-block">
+  <div class="container grid">
+    <div>
+      <img src="images/beach.png?v=2" alt="Beach coastline">
+    </div>
+    <div>
       <hgroup>
         <h2>How We Help</h2>
         <h3>Strategy Development & Integration</h3>
       </hgroup>
-
       <p>
-        We embed climate intelligence into core business and event operations — translating systemic risk into strategic advantage. Our approach strengthens enterprise resilience, enhances stakeholder confidence, and unlocks new growth pathways in a climate-uncertain world.
+        We embed climate intelligence into core business and event operations — translating systemic risk into strategic advantage.
       </p>
 
       <form class="grid">
-        <input type="text" id="firstname" name="firstname" placeholder="Your Name" required />
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
         <button type="submit" onclick="event.preventDefault()">Contact</button>
       </form>
-
-    </article>
+    </div>
   </div>
 </section>
 
@@ -138,5 +150,5 @@
 
 </body>
 </html>
-   
+
 
