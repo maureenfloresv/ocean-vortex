@@ -21,19 +21,28 @@ background:linear-gradient(to bottom,#e6f4ff,#ffffff);
 }
 
 /* =========================
-HEADER
+HEADER (FORCED OVERRIDE)
 ========================= */
 
 nav.container-fluid{
+
 background:#0b3d91;
-height:9rem;
+
+/* triple header size */
+min-height:150px;
+
+/* override pico layout */
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:0 2rem;
+align-items:center;
+
+padding:0 40px;
 
 border-bottom:6px solid #ffd54f;
+
 }
+
+/* remove pico margins */
 
 nav.container-fluid ul{
 display:flex;
@@ -41,21 +50,24 @@ align-items:center;
 margin:0;
 }
 
+/* spacing menu items */
+
 nav.container-fluid ul:last-child li{
-margin-left:2rem;
+margin-left:40px;
 }
 
-/* logo */
+/* large logo */
 
 .logo{
-height:7rem;
+height:110px;
 width:auto;
 }
 
-/* navigation links */
+/* nav links */
 
 nav a{
 color:white;
+font-weight:500;
 }
 
 nav a:hover{
@@ -128,8 +140,6 @@ text-align:center;
 
 <body>
 
-<!-- HEADER -->
-
 <nav class="container-fluid">
 
 <ul>
@@ -147,8 +157,6 @@ text-align:center;
 </nav>
 
 <main class="container">
-
-<!-- HERO -->
 
 <section class="grid hero">
 
@@ -179,8 +187,6 @@ At Ocean Vortex, we position climate strategy as a catalyst for innovation and r
 
 </section>
 
-<!-- INNOVATION -->
-
 <section class="grid section-block">
 
 <div>
@@ -203,8 +209,6 @@ We convene leaders across sport, science, technology, finance, and policy.
 
 </section>
 
-<!-- RISK -->
-
 <section class="grid section-block">
 
 <div>
@@ -226,8 +230,6 @@ We assess exposure to climate uncertainty and operational disruption.
 </div>
 
 </section>
-
-<!-- COURSE -->
 
 <section class="grid section-block">
 
@@ -252,8 +254,6 @@ We deliver executive workshops integrating climate intelligence into leadership 
 </section>
 
 </main>
-
-<!-- CONTACT -->
 
 <section class="contact-section">
 
