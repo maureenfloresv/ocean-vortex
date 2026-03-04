@@ -24,7 +24,25 @@ background:linear-gradient(to bottom,#e6f4ff,#ffffff);
 
 nav{
 background:var(--deep-blue);
+padding:10px 25px;
 }
+
+/* Align header items vertically */
+
+nav ul li{
+display:flex;
+align-items:center;
+}
+
+/* Logo scaling */
+
+.logo{
+height:70px;
+width:auto;
+display:block;
+}
+
+/* Nav links */
 
 nav a{
 color:white;
@@ -34,11 +52,7 @@ nav a:hover{
 color:var(--accent-yellow);
 }
 
-.logo{
-height:45px;
-}
-
-/* BUTTONS */
+/* Buttons */
 
 a[role="button"],
 button{
@@ -48,7 +62,7 @@ color:#222 !important;
 font-weight:600;
 }
 
-/* SECTIONS */
+/* Sections */
 
 .hero{
 padding:4rem 0;
@@ -79,7 +93,7 @@ margin-top:1rem;
 margin-top:1rem;
 }
 
-/* CONTACT BLOCK */
+/* Contact block */
 
 .contact-section{
 background:#e8f4ff;
