@@ -1,109 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ocean Vortex</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 
-  <style>
-    body { background: linear-gradient(to bottom, #e6f4ff, #ffffff); }
-    .hero { padding: 4rem 0; align-items: center; }
-    .section-block { padding: 4rem 0; align-items: center; }
-    img { border-radius: 14px; width: 100%; height: auto; }
-    hgroup h2 { color: #003366; }
-    h3 { color: #004080; margin-top: 1rem; }
-    footer { padding: 2rem 0; text-align: center; }
-  </style>
+<meta charset="UTF-8">
+<title>Ocean Vortex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+<style>
+
+:root{
+--deep-blue:#0b3d91;
+--mid-blue:#1f5fbf;
+--light-blue:#e8f4ff;
+--accent-yellow:#ffd54f;
+}
+
+nav{
+background:var(--deep-blue);
+}
+
+nav a{
+color:white;
+}
+
+nav a:hover{
+color:var(--accent-yellow);
+}
+
+.logo-header{
+height:48px;
+}
+
+.logo-footer{
+height:70px;
+margin-bottom:1rem;
+}
+
+.hero{
+padding:4rem 0;
+}
+
+.section-block{
+padding:3.5rem 0;
+}
+
+.alt{
+background:var(--light-blue);
+padding:2rem;
+border-radius:14px;
+border-top:6px solid var(--accent-yellow);
+}
+
+h2{
+color:var(--deep-blue);
+}
+
+h3{
+color:var(--mid-blue);
+}
+
+h3::after{
+content:"";
+display:block;
+width:60px;
+height:4px;
+background:var(--accent-yellow);
+margin-top:8px;
+border-radius:2px;
+}
+
+.content-img{
+border-radius:16px;
+box-shadow:0 10px 22px rgba(0,0,0,0.08);
+}
+
+button,
+.explore-btn{
+background:var(--accent-yellow);
+color:#222;
+border:none;
+font-weight:600;
+box-shadow:0 6px 16px rgba(255,213,79,0.4);
+}
+
+button:hover,
+.explore-btn:hover{
+background:#ffc107;
+}
+
+.cta{
+background:linear-gradient(135deg,#e8f4ff,#ffffff);
+padding:2rem;
+border-radius:16px;
+border-top:6px solid var(--accent-yellow);
+}
+
+footer{
+padding:2rem 0;
+text-align:center;
+border-top:1px solid #eee;
+margin-top:2rem;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <nav class="container-fluid">
-  <ul><li><strong>Ocean Vortex</strong></li></ul>
-  <ul>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#" role="button">Contact</a></li>
-  </ul>
+
+<ul>
+<li>
+<img src="images/logo.png" class="logo-header" alt="Ocean Vortex logo">
+</li>
+</ul>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#" role="button">Contact</a></li>
+</ul>
+
 </nav>
 
 <main class="container">
 
-  <!-- HERO -->
-  <section class="grid hero">
-    <div>
-      <img src="swimmer.png?v=18" alt="Open water swimmer">
-    </div>
-    <div>
-      <hgroup>
-        <h2>Climate Strategy for Ocean Sport</h2>
-        <h3>Transforming Climate Risk into Competitive Advantage</h3>
-      </hgroup>
-      <p>As climate volatility reshapes the future of sport, sustainability alone is no longer sufficient.</p>
-      <p>At Ocean Vortex, we position climate strategy as a catalyst for innovation and resilience.</p>
-    </div>
-  </section>
+<div class="grid hero alt">
 
-  <!-- INNOVATION -->
-  <section class="grid section-block">
-    <div>
-      <h3>Innovation Ecosystem Development</h3>
-      <p>We convene leaders across sport, science, technology, finance, and policy.</p>
-    </div>
-    <div>
-      <img src="surfinnovation.png?v=18" alt="Innovation surfer">
-    </div>
-  </section>
+<section>
 
-  <!-- RISK ASSESSMENT -->
-  <section class="grid section-block">
-    <div>
-      <img src="risk.png?v=18" alt="Climate risk event">
-    </div>
-    <div>
-      <h3>Climate Risk Assessments for Events</h3>
-      <p>We assess exposure to climate uncertainty and operational disruption.</p>
-    </div>
-  </section>
+<hgroup>
+<h2>Climate Strategy for Ocean Sport</h2>
+<h3>Transforming Climate Risk into Competitive Advantage</h3>
+</hgroup>
 
-  <!-- COURSE -->
-  <section class="grid section-block">
-    <div>
-      <h3>Executive Climate & Innovation Strategy Course</h3>
-      <p>We deliver executive workshops integrating climate intelligence into leadership decision-making.</p>
-    </div>
-    <div>
-      <img src="course.png?v=18" alt="Executive climate strategy course">
-    </div>
-  </section>
+<p>
+Ocean Vortex helps sport organizations transform climate uncertainty into strategic advantage through innovation, risk intelligence, and leadership training.
+</p>
+
+<p>
+<a href="#" role="button" class="explore-btn">Explore</a>
+</p>
+
+</section>
+
+<section>
+
+<img src="images/swimmer.png" class="content-img" alt="Open water swimmer">
+
+</section>
+
+</div>
+
+<div class="grid section-block alt">
+
+<section>
+
+<h3>Innovation Ecosystem Development</h3>
+
+<p>
+We convene leaders across sport, science, technology, finance and policy to build new solutions for climate resilience in ocean sport.
+</p>
+
+<p>
+<a href="#" role="button" class="explore-btn">Explore</a>
+</p>
+
+</section>
+
+<section>
+
+<img src="images/surfinnovation.png" class="content-img" alt="Innovation ecosystem">
+
+</section>
+
+</div>
+
+<div class="grid section-block alt">
+
+<section>
+
+<img src="images/risk.png" class="content-img" alt="Climate risk">
+
+</section>
+
+<section>
+
+<h3>Climate Risk Assessments for Events</h3>
+
+<p>
+We assess operational exposure to climate volatility including water conditions, weather risk, and infrastructure resilience.
+</p>
+
+<p>
+<a href="#" role="button" class="explore-btn">Explore</a>
+</p>
+
+</section>
+
+</div>
+
+<div class="grid section-block alt">
+
+<section>
+
+<h3>Executive Climate & Innovation Strategy Course</h3>
+
+<p>
+Executive workshops designed to integrate climate intelligence into leadership and decision making for ocean sport organizations.
+</p>
+
+<p>
+<a href="#" role="button" class="explore-btn">Explore</a>
+</p>
+
+</section>
+
+<section>
+
+<img src="images/course.png" class="content-img" alt="Executive course">
+
+</section>
+
+</div>
 
 </main>
 
-<section class="section-block">
-  <div class="container grid">
-    <div>
-      <img src="beach.png?v=18" alt="Beach coastline">
-    </div>
-    <div>
-      <hgroup>
-        <h2>How We Help</h2>
-        <h3>Strategy Development & Integration</h3>
-      </hgroup>
-      <p>We embed climate intelligence into core business and event operations.</p>
-      <form class="grid">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit" onclick="event.preventDefault()">Contact</button>
-      </form>
-    </div>
-  </div>
+<section aria-label="Subscribe example">
+
+<div class="container">
+
+<article class="cta">
+
+<div class="grid">
+
+<div>
+<img src="images/logo.png" class="logo-footer" alt="Ocean Vortex logo">
+</div>
+
+<div>
+
+<hgroup>
+<h2>How to Contact</h2>
+<h3>Strategy Development & Integration</h3>
+</hgroup>
+
+<form class="grid">
+
+<input type="text" id="firstname" name="firstname" placeholder="Your Name" required>
+
+<input type="email" id="email" name="email" placeholder="Your Email" required>
+
+<button type="submit" onclick="event.preventDefault()">Contact</button>
+
+</form>
+
+</div>
+
+</div>
+
+</article>
+
+</div>
+
 </section>
 
 <footer class="container">
-  <small>
-    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> • Ocean Vortex
-  </small>
+
+<small>
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a> • Ocean Vortex
+</small>
+
 </footer>
 
 </body>
