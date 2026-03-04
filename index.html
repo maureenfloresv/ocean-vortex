@@ -1,329 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <title>Ocean Vortex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 
-<meta charset="UTF-8">
-<title>Ocean Vortex</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --deep-blue:#0b3d91;
+      --accent-yellow:#ffd54f;
+      --light-blue:#e8f4ff;
+    }
 
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    body{
+      background:linear-gradient(to bottom,#e6f4ff,#ffffff);
+      margin:0;
+    }
 
-<style>
+    /* =========================
+       HEADER
+    ========================= */
+    .header{
+      background:var(--deep-blue);
+      min-height:150px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:0 40px;
+      border-bottom:6px solid var(--accent-yellow);
+    }
 
-:root{
---deep-blue:#0b3d91;
---accent-yellow:#ffd54f;
---light-blue:#e8f4ff;
-}
+    /* Light logo zone so blue logo is visible */
+    .logo-zone{
+      background:var(--light-blue);
+      padding:15px 25px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
 
-body{
-background:linear-gradient(to bottom,#e6f4ff,#ffffff);
-}
+    /* Logo size */
+    .logo{
+      height:100px;
+      width:auto;
+      display:block;
+    }
 
-/* =========================
-HEADER
-========================= */
+    /* Navigation */
+    .nav-links{
+      display:flex;
+      gap:40px;
+      align-items:center;
+    }
 
-nav.container-fluid{
+    .header a{
+      color:white;
+      text-decoration:none;
+      font-weight:500;
+    }
 
-background:#0b3d91;
-min-height:150px;
+    .header a:hover{
+      color:var(--accent-yellow);
+    }
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    /* Buttons */
+    a[role="button"],
+    button{
+      background:var(--accent-yellow) !important;
+      border:none !important;
+      color:#222 !important;
+      font-weight:600;
+    }
 
-padding:0 40px;
+    /* =========================
+       CONTENT
+    ========================= */
+    .hero{ padding:4rem 0; align-items:center; }
+    .section-block{ padding:4rem 0; align-items:center; }
 
-border-bottom:6px solid #ffd54f;
+    img{
+      border-radius:14px;
+      width:100%;
+      height:auto;
+    }
 
-}
+    hgroup h2{ color:#003366; }
+    h3{ color:#004080; margin-top:1rem; }
+    .btn-space{ margin-top:1rem; }
 
-/* navigation layout */
+    /* Contact section */
+    .contact-section{
+      background:var(--light-blue);
+      padding:3rem 0;
+    }
 
-nav.container-fluid ul{
-display:flex;
-align-items:center;
-margin:0;
-padding:0;
-}
-
-/* spacing menu items */
-
-nav.container-fluid ul:last-child li{
-margin-left:40px;
-}
-
-/* =========================
-LOGO ZONE
-========================= */
-
-.logo-zone{
-
-background:#e8f4ff;
-padding:12px 20px;
-border-radius:12px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-}
-
-/* logo */
-
-.logo{
-height:100px;
-width:auto;
-}
-
-/* navigation links */
-
-nav a{
-color:white;
-font-weight:500;
-}
-
-nav a:hover{
-color:#ffd54f;
-}
-
-/* buttons */
-
-a[role="button"],
-button{
-background:#ffd54f !important;
-border:none;
-color:#222 !important;
-font-weight:600;
-}
-
-/* =========================
-CONTENT
-========================= */
-
-.hero{
-padding:4rem 0;
-align-items:center;
-}
-
-.section-block{
-padding:4rem 0;
-align-items:center;
-}
-
-img{
-border-radius:14px;
-width:100%;
-height:auto;
-}
-
-hgroup h2{
-color:#003366;
-}
-
-h3{
-color:#004080;
-margin-top:1rem;
-}
-
-.btn-space{
-margin-top:1rem;
-}
-
-/* =========================
-CONTACT SECTION
-========================= */
-
-.contact-section{
-background:#e8f4ff;
-padding:3rem 0;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-padding:2rem 0;
-text-align:center;
-}
-
-</style>
-
+    footer{ padding:2rem 0; text-align:center; }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+  <!-- HEADER -->
+  <nav class="header">
 
-<nav class="container-fluid">
+    <!-- ✅ LOGO IS HERE (header left) -->
+    <div class="logo-zone">
+      <!-- If your logo is in /images, use: src="images/logonew1.png" -->
+      <img src="logonew1.png" class="logo" alt="Ocean Vortex logo">
+    </div>
 
-<ul>
-<li>
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#" role="button">Contact</a>
+    </div>
 
-<div class="logo-zone">
-<img src="logonew1.png" class="logo" alt="Ocean Vortex logo">
-</div>
+  </nav>
 
-</li>
-</ul>
+  <!-- MAIN CONTENT -->
+  <main class="container">
 
-<ul>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#" role="button">Contact</a></li>
-</ul>
+    <section class="grid hero">
+      <div>
+        <img src="swimmer.png" alt="Open water swimmer">
+      </div>
+      <div>
+        <hgroup>
+          <h2>Climate Strategy for Ocean Sport</h2>
+          <h3>Transforming Climate Risk into Competitive Advantage</h3>
+        </hgroup>
+        <p>As climate volatility reshapes the future of sport, sustainability alone is no longer sufficient.</p>
+        <p>At Ocean Vortex, we position climate strategy as a catalyst for innovation and resilience.</p>
+        <p class="btn-space"><a href="#" role="button">Explore</a></p>
+      </div>
+    </section>
 
-</nav>
+    <section class="grid section-block">
+      <div>
+        <h3>Innovation Ecosystem Development</h3>
+        <p>We convene leaders across sport, science, technology, finance, and policy.</p>
+        <p class="btn-space"><a href="#" role="button">Explore</a></p>
+      </div>
+      <div>
+        <img src="surfinnovation.png" alt="Innovation surfer">
+      </div>
+    </section>
 
-<!-- MAIN CONTENT -->
+    <section class="grid section-block">
+      <div>
+        <img src="risk.png" alt="Climate risk event">
+      </div>
+      <div>
+        <h3>Climate Risk Assessments for Events</h3>
+        <p>We assess exposure to climate uncertainty and operational disruption.</p>
+        <p class="btn-space"><a href="#" role="button">Explore</a></p>
+      </div>
+    </section>
 
-<main class="container">
+    <section class="grid section-block">
+      <div>
+        <h3>Executive Climate & Innovation Strategy Course</h3>
+        <p>We deliver executive workshops integrating climate intelligence into leadership decision-making.</p>
+        <p class="btn-space"><a href="#" role="button">Explore</a></p>
+      </div>
+      <div>
+        <img src="course.png" alt="Executive climate strategy course">
+      </div>
+    </section>
 
-<section class="grid hero">
+  </main>
 
-<div>
-<img src="swimmer.png" alt="Open water swimmer">
-</div>
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container grid">
+      <div>
+        <img src="beach.png" alt="Beach coastline">
+      </div>
+      <div>
+        <hgroup>
+          <h2>How to Contact</h2>
+          <h3>Strategy Development & Integration</h3>
+        </hgroup>
+        <p>We embed climate intelligence into core business and event operations.</p>
+        <form class="grid">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <button type="submit" onclick="event.preventDefault()">Contact</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<div>
-
-<hgroup>
-<h2>Climate Strategy for Ocean Sport</h2>
-<h3>Transforming Climate Risk into Competitive Advantage</h3>
-</hgroup>
-
-<p>
-As climate volatility reshapes the future of sport, sustainability alone is no longer sufficient.
-</p>
-
-<p>
-At Ocean Vortex, we position climate strategy as a catalyst for innovation and resilience.
-</p>
-
-<p class="btn-space">
-<a href="#" role="button">Explore</a>
-</p>
-
-</div>
-
-</section>
-
-<section class="grid section-block">
-
-<div>
-
-<h3>Innovation Ecosystem Development</h3>
-
-<p>
-We convene leaders across sport, science, technology, finance, and policy.
-</p>
-
-<p class="btn-space">
-<a href="#" role="button">Explore</a>
-</p>
-
-</div>
-
-<div>
-<img src="surfinnovation.png" alt="Innovation surfer">
-</div>
-
-</section>
-
-<section class="grid section-block">
-
-<div>
-<img src="risk.png" alt="Climate risk event">
-</div>
-
-<div>
-
-<h3>Climate Risk Assessments for Events</h3>
-
-<p>
-We assess exposure to climate uncertainty and operational disruption.
-</p>
-
-<p class="btn-space">
-<a href="#" role="button">Explore</a>
-</p>
-
-</div>
-
-</section>
-
-<section class="grid section-block">
-
-<div>
-
-<h3>Executive Climate & Innovation Strategy Course</h3>
-
-<p>
-We deliver executive workshops integrating climate intelligence into leadership decision-making.
-</p>
-
-<p class="btn-space">
-<a href="#" role="button">Explore</a>
-</p>
-
-</div>
-
-<div>
-<img src="course.png" alt="Executive climate strategy course">
-</div>
-
-</section>
-
-</main>
-
-<!-- CONTACT -->
-
-<section class="contact-section">
-
-<div class="container grid">
-
-<div>
-<img src="beach.png" alt="Beach coastline">
-</div>
-
-<div>
-
-<hgroup>
-<h2>How to Contact</h2>
-<h3>Strategy Development & Integration</h3>
-</hgroup>
-
-<p>
-We embed climate intelligence into core business and event operations.
-</p>
-
-<form class="grid">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<button type="submit" onclick="event.preventDefault()">Contact</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="container">
-
-<small>
-<a href="https://www.linkedin.com" target="_blank">LinkedIn</a> • Ocean Vortex
-</small>
-
-</footer>
+  <footer class="container">
+    <small>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a> • Ocean Vortex
+    </small>
+  </footer>
 
 </body>
 </html>
