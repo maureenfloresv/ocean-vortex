@@ -16,6 +16,8 @@ href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 --accent-yellow:#ffd54f;
 }
 
+/* PAGE BACKGROUND */
+
 body{
 background:linear-gradient(to bottom,#e6f4ff,#ffffff);
 }
@@ -24,25 +26,29 @@ background:linear-gradient(to bottom,#e6f4ff,#ffffff);
 
 nav{
 background:var(--deep-blue);
-padding:10px 25px;
-}
-
-/* Align header items vertically */
-
-nav ul li{
+padding:12px 30px;
 display:flex;
 align-items:center;
+justify-content:space-between;
 }
 
-/* Logo scaling */
+/* Align menu items */
+
+nav ul{
+display:flex;
+align-items:center;
+margin:0;
+}
+
+/* Logo scaling relative to header */
 
 .logo{
-height:70px;
+height:100%;
+max-height:80px;
 width:auto;
-display:block;
 }
 
-/* Nav links */
+/* Navigation links */
 
 nav a{
 color:white;
@@ -93,12 +99,14 @@ margin-top:1rem;
 margin-top:1rem;
 }
 
-/* Contact block */
+/* Contact section */
 
 .contact-section{
 background:#e8f4ff;
 padding:3rem 0;
 }
+
+/* Footer */
 
 footer{
 padding:2rem 0;
@@ -121,9 +129,13 @@ text-align:center;
 </ul>
 
 <ul>
+
 <li><a href="#">About</a></li>
+
 <li><a href="#">Services</a></li>
+
 <li><a href="#" role="button">Contact</a></li>
+
 </ul>
 
 </nav>
