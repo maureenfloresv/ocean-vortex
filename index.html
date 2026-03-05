@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 <style>
 
@@ -26,7 +27,7 @@ body{
 
 .header{
   background:var(--light-blue);
-  min-height:0;                /* override PicoCSS */
+  min-height:0;                
   padding:0 40px;
   border-bottom:6px solid var(--accent-yellow);
 
@@ -55,9 +56,11 @@ body{
 }
 
 .header a{
-  color:var(--deep-blue);
+  color:#041f4a;                 /* darker blue like logo */
   text-decoration:none;
-  font-weight:500;
+  font-family:'DM Serif Display', serif;   /* same serif style as logo word "Ocean" */
+  font-size:28px;
+  font-weight:700;
 }
 
 .header a:hover{
