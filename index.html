@@ -21,11 +21,12 @@
     /* =========================
        HEADER
     ========================= */
+
     .header{
       background:var(--light-blue);
-      height:320px; 
-      justify-content:space-between;
-      align-items:center;
+      height:300px;        /* matches logo height */
+      min-height:0;        /* override PicoCSS nav rule */
+      display:block;       /* stop PicoCSS flex */
       padding:0 40px;
       border-bottom:6px solid var(--accent-yellow);
     }
@@ -33,20 +34,18 @@
     .logo-zone{
       background:transparent;
       padding:0;
-      border-radius:12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      display:block;
     }
 
     .logo{
       height:300px;
       width:auto;
-      max-height:100%; /* prevents header expansion */
       display:block;
     }
 
     .nav-links{
+      float:right;
+      margin-top:120px;
       display:flex;
       gap:40px;
       align-items:center;
@@ -63,6 +62,7 @@
     }
 
     /* Buttons */
+
     a[role="button"],
     button{
       background:var(--accent-yellow) !important;
@@ -74,6 +74,7 @@
     /* =========================
        CONTENT
     ========================= */
+
     .hero{ padding:4rem 0; align-items:center; }
     .section-block{ padding:4rem 0; align-items:center; }
 
@@ -97,6 +98,7 @@
     /* =========================
        FOOTER
     ========================= */
+
     footer{
       background:var(--light-blue);
       padding:2rem 0;
@@ -113,6 +115,7 @@
 
 <body>
 
+  <!-- HEADER -->
   <nav class="header">
 
     <div class="logo-zone">
@@ -127,6 +130,7 @@
 
   </nav>
 
+  <!-- MAIN CONTENT -->
   <main class="container">
 
     <section class="grid hero">
@@ -179,6 +183,7 @@
 
   </main>
 
+  <!-- CONTACT -->
   <section class="contact-section">
     <div class="container grid">
       <div>
