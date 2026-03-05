@@ -14,7 +14,7 @@
     }
 
     body{
-      background:var(--deep-blue); /* Corpus background */
+      background:var(--deep-blue);
       margin:0;
     }
 
@@ -22,8 +22,8 @@
        HEADER
     ========================= */
     .header{
-      background:var(--light-blue); /* Light blue header */
-      min-height:210px;
+      background:var(--light-blue);
+      height:320px; /* fixed height slightly larger than logo */
       display:flex;
       justify-content:space-between;
       align-items:center;
@@ -31,7 +31,6 @@
       border-bottom:6px solid var(--accent-yellow);
     }
 
-    /* Light logo zone */
     .logo-zone{
       background:transparent;
       padding:0;
@@ -44,6 +43,7 @@
     .logo{
       height:300px;
       width:auto;
+      max-height:100%; /* prevents header expansion */
       display:block;
     }
 
@@ -54,7 +54,7 @@
     }
 
     .header a{
-      color:var(--deep-blue); /* Dark blue header text */
+      color:var(--deep-blue);
       text-decoration:none;
       font-weight:500;
     }
@@ -84,16 +84,12 @@
       height:auto;
     }
 
-    /* Titles solid white */
     hgroup h2{ color:white; }
     h3{ color:white; margin-top:1rem; }
-
-    /* Body text white */
     p{ color:white; }
 
     .btn-space{ margin-top:1rem; }
 
-    /* Contact section */
     .contact-section{
       background:var(--deep-blue);
       padding:3rem 0;
@@ -118,7 +114,6 @@
 
 <body>
 
-  <!-- HEADER -->
   <nav class="header">
 
     <div class="logo-zone">
@@ -133,7 +128,6 @@
 
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main class="container">
 
     <section class="grid hero">
@@ -186,7 +180,6 @@
 
   </main>
 
-  <!-- CONTACT -->
   <section class="contact-section">
     <div class="container grid">
       <div>
