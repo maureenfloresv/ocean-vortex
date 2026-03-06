@@ -27,7 +27,7 @@ body{
 
 .header{
   background:var(--light-blue);
-  height:300px;                
+  height:200px;
   padding:0 40px;
   border-bottom:6px solid var(--accent-yellow);
 
@@ -38,12 +38,14 @@ body{
 
 .logo-zone{
   padding:0;
+  height:100%;
+  display:flex;
+  align-items:center;
 }
 
 .logo{
-  height:300px;
-  width:auto !important;
-  max-width:none;
+  height:100%;
+  width:auto;
   display:block;
 }
 
@@ -56,9 +58,9 @@ body{
 }
 
 .header a{
-  color:#041f4a;                 /* darker blue like logo */
+  color:#041f4a;
   text-decoration:none;
-  font-family:'DM Serif Display', serif;   /* same serif style as logo word "Ocean" */
+  font-family:'DM Serif Display', serif;
   font-size:28px;
   font-weight:700;
 }
@@ -84,15 +86,11 @@ button{
 .hero{ padding:4rem 0; }
 .section-block{ padding:4rem 0; }
 
-/* only affect content images */
-
 main img{
   border-radius:14px;
   width:100%;
   height:auto;
 }
-
-/* generic image reset */
 
 img{
   max-width:100%;
